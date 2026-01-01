@@ -8,7 +8,9 @@ This game has :
   - Spell–spell and spell–environment interactions
   - Adaptive AI with severall difficulty levels that reacts to player behavior
 
-**Full Gameplay Videos**
+### Full Gameplay Videos
+This project is actively under development.  
+Gameplay footage represents a work-in-progress build focused on demonstrating systems and mechanics rather than final polish.
 - Arena Mode: [https://www.youtube.com/watch?v=XXXX](https://www.youtube.com/watch?v=RBqKmq2vxv8)
 - 1v1 Mode: [https://www.youtube.com/watch?v=YYYY](https://www.youtube.com/watch?v=aQS5SNE5Reo)
 - Teamfight Mode: [https://www.youtube.com/watch?v=ZZZZ](https://www.youtube.com/watch?v=ZFREk5n1Z_Q)
