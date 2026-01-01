@@ -80,8 +80,8 @@ s_filled = STRAT_FILLED.setdefault("", {
 client = ClobClient("https://clob.polymarket.com")  
 HOST = "https://clob.polymarket.com"
 CHAIN_ID = 137
-FUNDER = ""
-PRIVATE_KEY = ""
+FUNDER = "..."
+PRIVATE_KEY = "..."
 SIGNATURE_TYPE = 2
 POLYGON_RPC = "https://polygon-rpc.com/"
 POSITIONS_API = "https://data-api.polymarket.com/positions"
@@ -659,3 +659,4 @@ def Main():
             time.sleep(30)
             continue
 Main()
+
