@@ -5,7 +5,7 @@ I tried to adapt the system to short-term prediction markets, but eventually sto
 Short-term markets tend to have:
 - Very high trading volume compared to available liquidity
 - Sudden price spikes caused by small order imbalances
-- A lot of competition from other market-making bots running very tight spreads.
+- A lot of competition from other market-making bots running very tight spreads
 
 Because of this, execution speed and latency matter much more, and small delays quickly turn a strategy unprofitable.
 
