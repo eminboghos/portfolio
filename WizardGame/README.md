@@ -26,13 +26,13 @@ Combat systems are designed in an event-driven way, allowing spells, shields, an
 
 ## AI System
 
-The AI system was the most complex and challenging part of the project. AI logic is implemented using Unreal Engine’s Behavior Trees and Blackboards. This structure helped manage complexity, but required careful design to avoid brittle or unpredictable behavior as new mechanics were added.
+The AI system was the most complex and challenging part of the project. AI logic is executed using Unreal Engine’s Behavior Trees and Blackboards. This structure helped manage complexity, but required careful design to avoid brittle or unpredictable behavior as new mechanics were added.
 
 The same core AI logic is reused across all difficulty levels. Instead of scaling health or damage, difficulty is handled by adjusting behavioral parameters such as reaction timing, positioning, spell selection, and aggression thresholds. The AI also adapts over time to the player’s playstyle, responding differently to the player’s reactivity.
 
 ## Multiplayer
 
-Multiplayer functionality was implemented using a client–server architecture, where one player acts as the host (server) and all other players connect as clients. Gameplay logic is primarily server-authoritative, using Unreal Engine’s built-in replication system to synchronize player states, spells, and world interactions. 
+Multiplayer functionality was configured using a client–server architecture, where one player acts as the host (server) and all other players connect as clients. Gameplay logic is primarily server-authoritative, using Unreal Engine’s built-in replication system to synchronize player states, spells, and world interactions. 
 
 To avoid giving the host an inherent latency advantage, many gameplay events are first evaluated on the client and then validated and propagated by the server. This approach prioritizes fairness in moment-to-moment combat. Through testing, the system remained fair and playable with no noticeable advantage for either the server or the clients up to around 200 ms of network delay. Beyond this threshold, latency becomes apparent and begins to affect timing-critical interactions, which is expected given the fast paced nature of the game.
 
