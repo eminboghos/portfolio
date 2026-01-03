@@ -51,7 +51,7 @@ The expected win rate per trade was intentionally close to 50%, reflecting a mar
 
 Profitability came solely from spread capture and orders filled in very illiquid markets.
 
-Several alternative version of this bot were tried but execution problems and increasing competition due to growing popularity of prediction markets led to their abandonment.
+Several alternative versions of this bot were tried but execution problems and increasing competition due to growing popularity of prediction markets led to their abandonment.
 
 ## Simplified Pseudocode
 
