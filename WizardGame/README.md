@@ -38,4 +38,4 @@ To avoid giving the host an inherent latency advantage, many gameplay events are
 
 ## What I Learned
 
-This project was a major step in improving how I approach system design, scalability, complexity management  and optimisation in game development. Working on a full-scale Unreal Engine 5 project with multiple interconnected systems taught me to think about both the architecture and the gameplay impact of every decision.
+This project was a major step in improving how I approach system design, scalability, complexity management and optimization in game development. Working on a full-scale Unreal Engine 5 project with multiple interconnected systems taught me to think about both the architecture and the gameplay impact of every decision.
