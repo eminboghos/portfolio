@@ -12,7 +12,7 @@ Running since November 2024. Consistently top 1% of Polymarket traders by PnL an
 
 ### PnL over time
 
-![PnL graph](media/bot_pnl.png)
+![PnL graph](media/dollar_pnl.png)
 
 *Cumulative PnL from November 2024 to present. The slope is consistent, with a visible flattening after taker fees were introduced in early 2025.*
 
