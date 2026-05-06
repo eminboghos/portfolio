@@ -57,7 +57,7 @@ See [architecture.md](./architecture.md) for the full implementation details.
 
 ## Results
 
-PnL graphs, transaction volume over time, and annotated milestone charts are in [results.md](./results.md).
+PnL graphs, transaction volume over time, and videos demonstrating the bot are in [results.md](./results.md).
 
 ---
 
