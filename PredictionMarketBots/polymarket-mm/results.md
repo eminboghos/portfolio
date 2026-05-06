@@ -29,7 +29,7 @@ The % return graph below reflects the same journey — the numbers look extreme 
 
 ### Daily transaction count
 
-![% Transaction count](media/transaction_count.png)
+![% Transaction count](media/transactions_count.png)
 
 *Number of fills per day. The drop-off after taker fee introduction is clearly visible. The bot continues placing orders daily.*
 
