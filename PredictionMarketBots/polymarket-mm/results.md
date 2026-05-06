@@ -29,7 +29,7 @@ The % return graph below reflects the same journey — the numbers look extreme 
 
 ### Daily transaction count
 
-![Transaction volume graph — replace with your image](../../polymarket-mm/media/charts/polymarket-daily-txns.png)
+![% Transaction count](media/transaction_count.png)
 
 *Number of fills per day. The drop-off after taker fee introduction is clearly visible. The bot continues placing orders daily.*
 
