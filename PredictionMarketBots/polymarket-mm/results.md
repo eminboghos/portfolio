@@ -8,16 +8,24 @@ Running since November 2024. Consistently top 1% of Polymarket traders by PnL an
 
 ## Graphs
 
-> **📊 Add your images here.** Suggested captions are below each placeholder.
-
 ### PnL over time
 
 ![PnL graph](media/dollar_pnl.png)
 
-*Cumulative PnL from November 2024 to present. The slope is consistent, with a visible flattening after taker fees were introduced in early 2025.*
+*Cumulative PnL from November 2024 to present, starting from an initial deposit of $10.*
+
+- **① Manual phase** — I was applying the strategy by hand, placing orders individually to validate the approach before building the bot.
+- **② Automated phase** — the bot takes over, quoting ~2,000 markets simultaneously. The slope increases immediately and stays consistent until taker fees are introduced (labeled on the chart), after which daily volume drops but PnL continues growing.
+
+The % return graph below reflects the same journey — the numbers look extreme (thousands of percent) because of the $10 starting capital, not because of outsized risk-taking.
 
 ---
 
+### PnL over time (% return)
+
+![% PnL graph](media/doar_pnl.png)
+
+*Same data as above expressed as % return on initial $10 deposit. The scale reflects the small starting capital — the absolute dollar figures are in the chart above.*
 ### Daily transaction count
 
 ![Transaction volume graph — replace with your image](../../polymarket-mm/media/charts/polymarket-daily-txns.png)
