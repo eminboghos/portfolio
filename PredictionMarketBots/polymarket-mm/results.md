@@ -35,14 +35,6 @@ The % return graph below reflects the same journey — the numbers look extreme 
 
 ---
 
-### Markets quoted over time
-
-![Markets graph — replace with your image](../../media/charts/polymarket-markets.png)
-
-*Number of markets actively quoted simultaneously. Settled at ~2,000 after initial scaling.*
-
----
-
 ## Platform ranking
 
 Top 1% by PnL and by total volume among all Polymarket traders. These metrics are visible on the Polymarket leaderboard.
