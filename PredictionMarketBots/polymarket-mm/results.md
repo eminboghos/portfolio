@@ -23,9 +23,10 @@ The % return graph below reflects the same journey — the numbers look extreme 
 
 ### PnL over time (% return)
 
-![% PnL graph](media/doar_pnl.png)
+![% PnL graph](media/percent_pnl.png)
 
-*Same data as above expressed as % return on initial $10 deposit. The scale reflects the small starting capital — the absolute dollar figures are in the chart above.*
+*Same data as above expressed as % return on initial $10 deposit. The scale reflects the small starting capital.*
+
 ### Daily transaction count
 
 ![Transaction volume graph — replace with your image](../../polymarket-mm/media/charts/polymarket-daily-txns.png)
