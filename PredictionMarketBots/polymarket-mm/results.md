@@ -12,7 +12,7 @@ Running since November 2024. Consistently top 1% of Polymarket traders by PnL an
 
 ### PnL over time
 
-![PnL graph — replace with your image](../../media/dollar_pnl.png)
+![PnL graph — replace with your image](../../polymarket-mm/media/dollar_pnl.png)
 
 *Cumulative PnL from November 2024 to present. The slope is consistent, with a visible flattening after taker fees were introduced in early 2025.*
 
@@ -20,7 +20,7 @@ Running since November 2024. Consistently top 1% of Polymarket traders by PnL an
 
 ### Daily transaction count
 
-![Transaction volume graph — replace with your image](../../media/charts/polymarket-daily-txns.png)
+![Transaction volume graph — replace with your image](../../polymarket-mm/media/charts/polymarket-daily-txns.png)
 
 *Number of fills per day. The drop-off after taker fee introduction is clearly visible. The bot continues placing orders daily.*
 
