@@ -41,3 +41,11 @@ Top 1% by PnL and by total volume among all Polymarket traders. These metrics ar
 
 ---
 
+## Demo video
+
+[![Watch the video](media/bot_demo_gif.gif)](https://www.youtube.com/watch?v=wY7DShzUWKc)
+
+Full video here -> https://www.youtube.com/watch?v=wY7DShzUWKc
+
+---
+
