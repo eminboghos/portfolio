@@ -1,8 +1,8 @@
-# Architecture — Polymarket Market Maker
+# Architecture : Polymarket Market Maker
 
 ## System overview
 
-The bot runs as a single Python process on AWS. There is no database — all state is held in memory and reconciled against the live order book on each cycle.
+The bot runs as a single Python process on AWS. There is no database, all state is held in memory and reconciled against the live order book on each cycle.
 
 ---
 
@@ -10,31 +10,29 @@ The bot runs as a single Python process on AWS. There is no database — all sta
 
 The core cycle runs continuously:
 
-1. **Fetch market data** — pull current orderbook snapshots for all markets via the Polymarket REST API
-2. **Filter markets** — keep only markets following all criterias
-3. **Compute quotes** — for each market, set bid = best_bid + 0.01, ask = best_ask - 0.01
-4. **Diff against current orders** — check which quotes have drifted more than the tolerance from live orders
-5. **Cancel and replace** — cancel stale orders and submit new ones for markets where the quote has moved
-6. **Sleep** — wait until the next cycle (target: full refresh in 30–60 seconds for ~2,000 markets)
+1. **Fetch market data** : pull current orderbook snapshots for all markets via the Polymarket REST API
+2. **Filter markets** : keep only markets following all criterias
+3. **Compute quotes** : for each market, set bid = best_bid + 0.01, ask = best_ask - 0.01
+4. **Diff against current orders** : check which quotes have drifted more than the tolerance from live orders
+5. **Cancel and replace** : cancel stale orders and submit new ones for markets where the quote has moved
+6. **Sleep** : wait until the next cycle (target: full refresh in 30–60 seconds for ~2,000 markets)
 
 ---
 
 ## Market selection
 
-Markets are selected at startup and periodically refreshed. Criteria:
+Markets are selected at startup and periodically refreshed. Criterias are:
 
 - Spread ≥ 20 cents (after my tightening, I still need enough margin to be worth quoting)
 - Highest bid > 25 cents (to not enter events that are very unlikely to happen)
 - Not resolving in the next 24h (too close to resolution = high adverse selection risk)
 - Sufficient volume (at least ~$500 volume/day)
 
-Running ~2,000 markets simultaneously is deliberate: more markets = more fills, and the diversification reduces variance.
-
 ---
 
 ## Order management
 
-Each market has at most two live orders at any time — one bid and one ask. The order manager tracks:
+Each market has at most two live orders at any time : one bid and one ask. The order manager tracks:
 
 - Order ID, side, price, and size for each live order
 - Fill history for PnL accounting
@@ -61,4 +59,4 @@ Getting through 2,000 markets in 30–60 seconds requires careful optimization. 
 
 - Batch API calls wherever the Polymarket API allows it
 - Process market data in parallel where possible
-- Avoid redundant work — only recompute quotes for markets where the orderbook has changed since the last cycle
+- Only recompute quotes for markets where the orderbook has changed since the last cycle
