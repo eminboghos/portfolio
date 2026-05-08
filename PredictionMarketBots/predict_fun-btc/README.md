@@ -39,7 +39,7 @@ The key to accurate pricing is the volatility input : see [black-scholes.md](./b
 
 When 15-minute markets launched, volume on the platform increased significantly : more traders, more takers, more competition. The 2% taker fee kept the spread floor at ~4c, which preserved margins. Volume jumped to several hundred dollars per hour. This inflection is visible in the [PnL graphs](./results.md).
 
-### v3 — 5-minute markets added (5th May 2026)
+### v3 — 5-minute markets added (6th May 2026)
 
 5-minute markets are the most volatile — every small Bitcoin move shifts the odds significantly, and quotes go stale faster than in longer-timeframe markets.
 
