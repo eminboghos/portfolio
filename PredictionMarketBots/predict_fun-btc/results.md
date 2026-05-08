@@ -2,68 +2,106 @@
 
 ## Summary
 
-Three distinct performance phases, each clearly visible in the PnL and volume graphs. The biggest step-changes were adding 15-minute markets (volume increase) and fixing the 20ms latency bug (volume and PnL both jump sharply).
+Three distinct performance phases, each clearly visible in the PnL graph. The biggest step-changes were adding 15-minute markets and 5-minute markets.
+
+---
+## PnL over time 
+
+
+![PnL graph](media/bot_pnl.png)
+
+*Cumulative PnL with three milestones: launch with 1h markets, 15min markets added,  5min markets*
 
 ---
 
-## Graphs
+## Live bot demo
 
-> **📊 Add your images here.** Suggested captions below each placeholder.
+![Console screenshot](media/predictfun-console.png)
 
-### PnL over time (annotated)
-
-![PnL graph — replace with your image](../../media/pnl-graphs/predictfun-pnl-annotated.png)
-
-*Cumulative PnL with three labeled milestones: (1) launch with 1h markets, (2) 15min markets added, (3) 5min markets + 20ms latency fix. The slope increases at each milestone.*
+> Video: AWS console showing the bot running in real time. *(link here)*
 
 ---
 
-### Volume per hour
+## How to read the console
 
-![Volume graph — replace with your image](../../media/charts/predictfun-volume-per-hour.png)
-
-*Hourly volume from launch to present. The jump from ~100/hr to ~3,000/hr between v1 and v3 is the main story.*
-
----
-
-### Quote latency over time
-
-![Latency graph — replace with your image](../../media/charts/predictfun-latency.png)
-
-*End-to-end quote update latency (ms from Binance tick to PredictFun order submitted). The drop from ~400ms to ~20ms at the v3 fix is clearly visible.*
+The console is split into two sections: a **position summary** at the top, and a
+**live order log** below. It refreshes continuously as Bitcoin moves and orders are placed.
 
 ---
 
-### My price vs Polymarket price
+### Position summary
 
-![Price comparison — replace with your image](../../media/charts/predictfun-vs-polymarket-price.png)
+The top section shows the current state of the bot's position for each active market
+(Bitcoin, and any other assets being traded).
 
-*Side-by-side comparison of my computed P(Up) vs Polymarket's displayed price. The two track closely (within 1–2%), validating the IV extraction methodology. My price updates arrive earlier on sharp Bitcoin moves.*
+**Market header**
+
+Shows the asset and the time remaining until the current market resolves. Each market
+has a fixed duration — when it expires, all shares pay out based on whether Bitcoin
+closed up or down.
+
+**Up and Down shares**
+
+The bot holds shares on both sides of the market simultaneously. For each side it
+tracks how many shares are held and the average price paid per share. Each share pays
+out $1 if that side wins and $0 if it loses.
+
+**Total average buy**
+
+The combined average cost across both sides, expressed in cents per $1 of total payout.
+The goal is to keep this below $1 — if the bot buys $1 of potential payout for less
+than $1 on average, the position has positive expected value by construction. Lower is
+better.
+
+**Up win / Down win**
+
+The PnL the bot would realize if the market resolves in each direction. When both
+values are positive, the position is fully hedged — the bot profits regardless of
+which way Bitcoin moves. When one side is negative, the bot is temporarily imbalanced
+and will rebalance as new maker orders fill on the weaker side.
+
+**Current expected PnL**
+
+The probability-weighted average of the two outcomes:
+
+$$\text{Expected PnL} = \text{Up win} \times P(\text{Up}) + \text{Down win} \times (1 - P(\text{Up}))$$
+
+$P(\text{Up})$ is computed in real time using Black-Scholes with the current Bitcoin
+price and implied volatility extracted from Polymarket. This number represents the
+bot's best estimate of what the position is worth right now — not at expiry, but
+given current market conditions.
 
 ---
 
-### Maker vs taker breakdown
+### Order log
 
-![Maker/taker pie or bar — replace with your image](../../media/charts/predictfun-maker-taker.png)
+The lower section is a timestamped stream of every action the bot takes, with
+millisecond precision.
 
-*~70% maker, ~30% taker across all transactions. Maker orders capture the spread; taker orders are used when I need to hedge or adjust quickly.*
+**Order placed**
 
----
+A new limit order submitted to PredictFun's order book, showing the side (up or down),
+price, and quantity. These are maker orders — they sit on the book waiting for a taker
+to cross the spread.
 
-## Version timeline
+**Canceling order**
 
-| Version | Date | Key change | Volume/hr |
-|---|---|---|---|
-| v1 | November 2024 | 1h markets, ~400ms latency | ~100 |
-| v2 | Early 2025 | 15min markets added | ~500 |
-| v3 | Early 2025 | 5min markets + 20ms latency fix | ~3,000 |
+Bitcoin moved. The current quote is now stale — it no longer reflects the correct
+probability — so the bot pulls the order immediately before it can be filled at the
+wrong price.
 
----
+**Partial fill**
 
-## Videos
+A taker crossed the spread but only took part of the order. For example, an order for
+100 shares might be partially filled in several increments — 2.5 shares, then 16.7
+shares — as different takers hit it at different moments. The order remains live on
+the book for the remaining quantity until it is either fully filled or canceled.
 
-The following videos are in [media/videos/](../../media/videos/):
+**Full fill**
 
-- **AWS console live view** — real-time logs of all order placements, cancellations, and fills with millisecond timestamps, share count, and expected value
-- **Price comparison** — split screen showing my computed P(Up), Polymarket's displayed price, and the current Bitcoin price. Demonstrates both the accuracy and the latency advantage
-- **Order book view** — live PredictFun order book with my bids and asks visible, updating as Bitcoin moves
+The entire order was taken. The bot now holds those shares as a maker position and
+will work to accumulate the opposite side to hedge the exposure.
+
+Partial fills are common — most orders are large enough that a single taker rarely
+takes the full quantity in one go. The bot tracks the filled quantity in real time via
+WebSocket and factors the new position into the expected PnL calculation immediately.
