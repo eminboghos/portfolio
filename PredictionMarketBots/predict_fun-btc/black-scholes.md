@@ -17,7 +17,7 @@ Where:
 | $T$ | Time remaining until market resolution  |
 | $\Phi$ | Cumulative normal distribution function |
 
-$S_0$ and $K$ are known. $T$ is known. The critical unknown is $\sigma$ (volatility).
+$S_0$, $K$ and $T$ are known. The critical unknown is $\sigma$ (volatility).
 
 ---
 
