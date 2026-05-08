@@ -1,4 +1,4 @@
-# Results — PredictFun Bitcoin Market Maker
+# Results : PredictFun Bitcoin Market Maker
 
 ## Summary
 
