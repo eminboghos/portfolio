@@ -8,7 +8,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 ## PnL over time 
 
 
-![PnL graph](media/bot_pnl.png)
+![PnL graph](media/predict_bot_pnl.png)
 
 *Cumulative PnL with three milestones: launch with 1h markets, 15min markets added,  5min markets*
 
