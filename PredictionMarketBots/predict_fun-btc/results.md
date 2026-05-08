@@ -16,16 +16,24 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ## Live bot demo
 
-![Console screenshot](media/predictfun-console.png)
+![Console screenshot](media/bot_demo_gif.gif)
 
-> Video: AWS console showing the bot running in real time. *(link here)*
+> Video: AWS console showing the bot running in real time.
+> 
+> Demo May 8, 11:30-11:45AM : https://youtu.be/XrqKRJo7mww
+> 
+> Demo May 8, 11:45-12:00PM : https://youtu.be/HOqg1OsMmms
+> 
+> Demo May 8, 12:00-12:15PM : https://youtu.be/iI1MEIVWExI
+> 
 
 ---
 
 ## How to read the console
 
-The console is split into two sections: a **position summary** at the top, and a
-**live order log** below. It refreshes continuously as Bitcoin moves and orders are placed.
+The console is split into two sections: a position summary at the top, and a
+live order log below. It refreshes continuously as Bitcoin moves and orders are placed.
+Also included the market orderbook and bictoin price.
 
 ---
 
@@ -37,7 +45,7 @@ The top section shows the current state of the bot's position for each active ma
 **Market header**
 
 Shows the asset and the time remaining until the current market resolves. Each market
-has a fixed duration — when it expires, all shares pay out based on whether Bitcoin
+has a fixed duration, when it expires, all shares pay out based on whether Bitcoin
 closed up or down.
 
 **Up and Down shares**
@@ -49,14 +57,14 @@ out $1 if that side wins and $0 if it loses.
 **Total average buy**
 
 The combined average cost across both sides, expressed in cents per $1 of total payout.
-The goal is to keep this below $1 — if the bot buys $1 of potential payout for less
+The goal is to keep this below $1. If the bot buys $1 of potential payout for less
 than $1 on average, the position has positive expected value by construction. Lower is
 better.
 
 **Up win / Down win**
 
 The PnL the bot would realize if the market resolves in each direction. When both
-values are positive, the position is fully hedged — the bot profits regardless of
+values are positive, the position is fully hedged, the bot profits regardless of
 which way Bitcoin moves. When one side is negative, the bot is temporarily imbalanced
 and will rebalance as new maker orders fill on the weaker side.
 
@@ -68,8 +76,7 @@ $$\text{Expected PnL} = \text{Up win} \times P(\text{Up}) + \text{Down win} \tim
 
 $P(\text{Up})$ is computed in real time using Black-Scholes with the current Bitcoin
 price and implied volatility extracted from Polymarket. This number represents the
-bot's best estimate of what the position is worth right now — not at expiry, but
-given current market conditions.
+bot's best estimate of what the position is worth right now.
 
 ---
 
@@ -81,20 +88,17 @@ millisecond precision.
 **Order placed**
 
 A new limit order submitted to PredictFun's order book, showing the side (up or down),
-price, and quantity. These are maker orders — they sit on the book waiting for a taker
-to cross the spread.
+price, and quantity.
 
 **Canceling order**
 
-Bitcoin moved. The current quote is now stale — it no longer reflects the correct
-probability — so the bot pulls the order immediately before it can be filled at the
-wrong price.
+As Bitcoin price moves, the bot cancels stale orders immediately before they can be filled at the wrong price.
 
 **Partial fill**
 
 A taker crossed the spread but only took part of the order. For example, an order for
-100 shares might be partially filled in several increments — 2.5 shares, then 16.7
-shares — as different takers hit it at different moments. The order remains live on
+100 shares might be partially filled in several increments : 2.5 shares, then 16.7
+shares, as different takers hit it at different moments. The order remains live on
 the book for the remaining quantity until it is either fully filled or canceled.
 
 **Full fill**
@@ -102,6 +106,6 @@ the book for the remaining quantity until it is either fully filled or canceled.
 The entire order was taken. The bot now holds those shares as a maker position and
 will work to accumulate the opposite side to hedge the exposure.
 
-Partial fills are common — most orders are large enough that a single taker rarely
+Partial fills are common, most orders are large enough that a single taker rarely
 takes the full quantity in one go. The bot tracks the filled quantity in real time via
 WebSocket and factors the new position into the expected PnL calculation immediately.
