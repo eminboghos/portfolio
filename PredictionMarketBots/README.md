@@ -11,7 +11,7 @@ This repository documents two production market-making bots I built and have run
 | Bot | Platform | Markets | Daily transactions | Status |
 |---|---|---|---|---|
 | [Polymarket MM](./polymarket-mm/) | Polymarket | ~2,000 simultaneously | ~2,000 trades/day | 🟢 Live |
-| [PredictFun BTC](./predictfun-btc/) | PredictFun | 1h / 15min / 5min BTC | ~$25,000 vol/day | 🟢 Live |
+| [PredictFun BTC](./predict_fun-btc/) | PredictFun | 1h / 15min / 5min BTC | ~$25,000 vol/day | 🟢 Live |
  
 Both bots place me in the **top 1% of traders** on their respective platforms by PnL and volume.
  
@@ -38,4 +38,4 @@ Both bots place me in the **top 1% of traders** on their respective platforms by
 - v2 (28th April) : 15min markets added, volume jumps significantly
 - v3 (5th May)    : 5min markets added, ~$3,000 volume/hour, 50 updates/s
 
-→ [Full write-up](./predictfun-btc/README.md)
+→ [Full write-up](./predict_fun-btc/README.md)
