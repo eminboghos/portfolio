@@ -1,4 +1,4 @@
-# Polymarket — Mass Market Maker
+# Polymarket : Mass Market Maker
 
 > Simultaneously quoting ~2,000 illiquid markets on Polymarket, placing ~2,000 transactions per day, running live on AWS since November 2024.
 
@@ -6,7 +6,7 @@
 
 ## Strategy
 
-Polymarket hosts over 50,000 prediction markets. The vast majority of these are illiquid — spreads of 20 cents or more are common, and sometimes no one has updated quotes in hours.
+Polymarket hosts over 50,000 prediction markets. The vast majority of these are illiquid, spreads of 20 cents or more are common, and sometimes no one has updated quotes in hours.
 
 My approach is simple and deliberately avoids needing to model the "correct" probability for any individual market:
 
@@ -40,7 +40,7 @@ Liquid markets on Polymarket have institutional and professional market makers c
 
 ## Impact of taker fees
 
-In early 2025, Polymarket added fees for takers. This reduced the number of takers on the platform: fewer people crossing the spread means fewer of my orders get filled. Daily transaction count dropped meaningfully after this change. The bot remains profitable but at lower throughput. This is visible in the [results graphs](./results.md).
+In early 2025, Polymarket added fees for takers. This reduced the number of takers on the platform: fewer people crossing the spread means fewer of my orders get filled. Daily transaction count dropped meaningfully after this change. This is visible in the [results graphs](./results.md).
 
 ---
 
@@ -63,6 +63,6 @@ PnL graphs, transaction volume over time, and videos demonstrating the bot are i
 
 ## Files
 
-- [architecture.md](./architecture.md) — how the bot is built: data flow, order management, API handling
-- [optimizations.md](./optimizations.md) — how I got the cycle time down to handle 2,000 markets per minute
-- [results.md](./results.md) — graphs and numbers
+- [architecture.md](./architecture.md) : how the bot is built: data flow, order management, API handling
+- [optimizations.md](./optimizations.md) : how I got the cycle time down to handle 2,000 markets per minute
+- [results.md](./results.md) : graphs and numbers
