@@ -11,7 +11,7 @@ The bot runs as a single Python process on AWS. There is no database, all state 
 The core cycle runs continuously:
 
 1. **Fetch market data** : pull current orderbook snapshots for all markets via the Polymarket REST API
-2. **Filter markets** : keep only markets following all criterias
+2. **Filter markets** : keep only markets following all criteria
 3. **Compute quotes** : for each market, set bid = best_bid + 0.01, ask = best_ask - 0.01
 4. **Diff against current orders** : check which quotes have drifted more than the tolerance from live orders
 5. **Cancel and replace** : cancel stale orders and submit new ones for markets where the quote has moved
@@ -21,7 +21,7 @@ The core cycle runs continuously:
 
 ## Market selection
 
-Markets are selected at startup and periodically refreshed. Criterias are:
+Markets are selected at startup and periodically refreshed. Criteria are:
 
 - Spread ≥ 20 cents (after my tightening, I still need enough margin to be worth quoting)
 - Highest bid > 25 cents (to not enter events that are very unlikely to happen)
