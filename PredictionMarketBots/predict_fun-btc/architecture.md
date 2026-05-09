@@ -24,7 +24,7 @@ See [black-scholes.md](./black-scholes.md) for the full IV extraction methodolog
 
 ### PredictFun WebSocket
 
-The bot connects to PredictFun's WebSocket to receive orderbook updates and fill notifications.
+The bot connects to PredictFun's WebSocket to receive order book updates and fill notifications.
 
 ---
 
