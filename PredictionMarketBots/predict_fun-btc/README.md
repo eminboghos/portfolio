@@ -1,6 +1,6 @@
 # PredictFun : Bitcoin Market Maker
 
-> Sub-second market-making on Bitcoin up/down prediction markets across 1h, 15min, and 5min time frames. 
+> Sub-second market making on Bitcoin up/down prediction markets across 1h, 15min, and 5min time frames. 
 
 ---
 
