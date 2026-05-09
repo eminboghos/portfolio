@@ -78,7 +78,7 @@ WS console logs are recorded and available in [results.md](./results.md), showin
 
 ## PredictFun WebSocket gap handling
 
-The PredictFun WebSocket delivers approximately 98% of events. Missing events could leave the bot with a stale view of the orderbook.
+The PredictFun WebSocket delivers approximately 98% of events. Missing events could leave the bot with a stale view of the order book.
 
 Gap detection: every message includes a sequence number. The bot tracks the last received sequence number and triggers a resync if a gap is detected.
 
