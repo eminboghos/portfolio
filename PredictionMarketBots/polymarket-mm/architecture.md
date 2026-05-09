@@ -37,7 +37,7 @@ Each market has at most two live orders at any time : one bid and one ask. The o
 - Order ID, side, price, and size for each live order
 - Fill history for PnL accounting
 
-On each cycle, orders whose price has drifted by more than 1 cent are cancelled and resubmitted. Orders that haven't been touched in a long time are left in place (not waste any API calls).
+On each cycle, orders whose price has drifted by more than 1 cent are canceled and resubmitted. Orders that haven't been touched in a long time are left in place (not waste any API calls).
 
 ---
 
@@ -59,4 +59,4 @@ Getting through 2,000 markets in 30–60 seconds requires careful optimization. 
 
 - Batch API calls wherever the Polymarket API allows it
 - Process market data in parallel where possible
-- Only recompute quotes for markets where the orderbook has changed since the last cycle
+- Only recompute quotes for markets where the order book has changed since the last cycle
