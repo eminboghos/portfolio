@@ -33,7 +33,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 The console is split into two sections: a position summary at the top, and a
 live order log below. It refreshes continuously as Bitcoin moves and orders are placed.
-Also included the market orderbook and bictoin price.
+Also included the market order book and bictoin price.
 
 ---
 
