@@ -1,6 +1,6 @@
 # Performance Optimizations : Polymarket Market Maker
 
-The core challenge is to cycle through ~2,000 markets, compare orderbook state, compute new quotes, and submit changes, all within 30–60 seconds, using a single Python process talking to a rate-limited REST API.
+The core challenge is to cycle through ~2,000 markets, compare order book state, compute new quotes, and submit changes, all within 30–60 seconds, using a single Python process talking to a rate-limited REST API.
 
 ---
 
@@ -18,7 +18,7 @@ In practice, only a small fraction of markets move in any 60 second window so th
 
 ### Deferred cancellation
 
-Cancelling an order costs an API call. If a quote has drifted slightly but is still within tolerance, the bot leaves the existing order in place rather than cancelling and resubmitting. This reduces the number of API calls per cycle significantly.
+Canceling an order costs an API call. If a quote has drifted slightly but is still within tolerance, the bot leaves the existing order in place rather than canceling and resubmitting. This reduces the number of API calls per cycle significantly.
 
 ### Parallel order submission
 
