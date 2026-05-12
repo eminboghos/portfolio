@@ -41,7 +41,7 @@ When 15-minute markets launched, volume on the platform increased significantly 
 
 ### v3 : 5-minute markets added (6th May 2026)
 
-5-minute markets are the most volatile : every small Bitcoin move shifts the odds significantly, and quotes go stale faster than in longer time 69frame markets.
+5-minute markets are the most volatile : every small Bitcoin move shifts the odds significantly, and quotes go stale faster than in longer time frame markets.
 
 While optimizing for this, I found a bug in my quote update path that, when fixed, reduced end-to-end latency from ~400ms to ~250ms. This was a step-change improvement that benefited all three timeframes. Volume jumped to ~$3,000/hour accross all timeframes. I also improved my bot to be able to updates quotes faster (up to 50 times per seconds).
 
