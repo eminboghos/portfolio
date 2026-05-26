@@ -18,7 +18,12 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ![Console screenshot](media/bot_demo_gif.gif)
 
-> Video: AWS console showing the bot running in real time.
+> V4 (high volume):
+> 
+> Demo May 19, 14:15-14:45PM : https://youtu.be/XrqKRJo7mww
+
+
+> V3 (low volume):
 > 
 > Demo May 8, 11:30-11:45AM : https://youtu.be/XrqKRJo7mww
 > 
