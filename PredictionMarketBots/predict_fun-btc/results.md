@@ -14,7 +14,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ---
 
-## PnL over time 
+## Performance Overwiew
 
 Performance statistiques over a sample of 230 rounds (19-21 May):
 
