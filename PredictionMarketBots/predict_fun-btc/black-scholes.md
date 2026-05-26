@@ -57,7 +57,6 @@ I have video recordings showing side-by-side comparisons of:
 
 The probability values are consistently within 1–2% of each other. My updates arrive measurably earlier when Bitcoin makes a sharp move.
 
-See [media/videos/](../../media/videos/) for the recordings.
 
 ---
 
