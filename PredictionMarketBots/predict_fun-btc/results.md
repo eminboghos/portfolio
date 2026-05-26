@@ -18,7 +18,11 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 Performance statistiques over a sample of 230 rounds (19-21 May):
 
+![Overwiew](media/performance_summary_sample_overwiew.png)
+
 📊 [Full performance statistics (Excel)](./media/performance_summary_sample.xlsx)
+
+---
 
 ## Live bot demo
 
