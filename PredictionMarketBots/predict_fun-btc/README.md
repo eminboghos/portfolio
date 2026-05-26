@@ -47,6 +47,17 @@ While optimizing for this, I found a bug in my quote update path that, when fixe
 
 As the 5-minute markets were implemented recently, they remain in the testing phase. I initially underestimated the impact of the increased volatility, which is reflected in the recent PnL dip shown in the [PnL graphs](./results.md).
 
+### v4 : Enhanced execution and pricing (19th May 2026)
+V4 focused on execution quality and pricing accuracy rather than adding new markets.
+
+**Faster cancellations** : moved quote cancellation triggers from calculated fair value change to raw Binance BTC price movement, Since fair value changes slightly lag Binance. End-to-end cancel latency dropped meaningfully as a result.
+
+**Server migration** : moved from eu-west1 (Ireland) to ca-west1 (Calgary), closer to Predict.fun and Binance infrastructure. Lower round-trip latency on both order placement and cancellation.
+
+**Enhanced terminal** : redesigned the console into a fixed dashboard header with a live scrolling order log below. All position metrics, risk stats and live P&L visible simultaneously without interfering with the log stream.
+
+**Extended stats** : added profit factor, annualized sharp ratio, max drawdown, expectancy, win rate, best streaks, share imbalance. Also planning on adding Sortino, Calmar, VaR 95%.
+
 ---
 
 ## Maker vs taker
