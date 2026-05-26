@@ -18,7 +18,7 @@ My approach:
 
 1. Connect to Binance via WebSocket to get real-time Bitcoin prices
 2. Use the Black-Scholes model to compute the correct probability of "up" given the current price, time remaining, and implied volatility
-3. Place a bid and ask centered on that probability, maintaining a ~5c spread
+3. Place a bid and ask centered on that probability, maintaining a ~1c spread
 4. Update quotes whenever the price of Bitcoin moves
 
 The key to accurate pricing is the volatility input : see [black-scholes.md](./black-scholes.md) for how I extract implied volatility from Polymarket's BTC markets rather than using Binance indicators.
