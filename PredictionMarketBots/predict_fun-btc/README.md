@@ -6,7 +6,7 @@
 
 ## Why PredictFun over Polymarket for this strategy?
 
-Polymarket's Bitcoin markets attract institutional market makers with professional infrastructure and large capital. PredictFun is a smaller platform with less competition at my level which means the playing field is more even, and the 2% taker fee on the platform creates a natural spread floor (~4c minimum) that protects market makers without being too restrictive.
+Polymarket's Bitcoin markets attract institutional market makers with professional infrastructure and large capital. PredictFun is a smaller platform with less competition at my level which means the playing field is more even.
 
 ---
 
