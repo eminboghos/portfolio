@@ -38,5 +38,6 @@ Market-make the "Bitcoin up or down?" markets on PredictFun across 3 timeframes 
 - v1 (12th April) : 1h markets, ~$100 volume/hour, 10 updates/s
 - v2 (28th April) : 15min markets added, volume jumps significantly
 - v3 (5th May)    : 5min markets added, ~$3,000 volume/hour, 50 updates/s
+- v4 (19th May)   : Reduced end to end latency
 
 → [Full write-up](./predict_fun-btc/README.md)
