@@ -50,7 +50,7 @@ Last updated : 30th May 2026
 
 The console is split into two sections: a position summary at the top, and a
 live order log below. It refreshes continuously as Bitcoin moves and orders are placed.
-Also included the market order book and bictoin price.
+Also included are the market order book and bictoin price.
 
 ---
 
