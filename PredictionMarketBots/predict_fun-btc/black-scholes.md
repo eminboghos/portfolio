@@ -37,7 +37,7 @@ The problem is that Binance volatility indicators are backward-looking or comput
 
 ## Implied volatility from Polymarket
 
-Polymarket's Bitcoin up/down markets are run by professional and institutional market makers with sophisticated models. Their prices are essentially ground truth for the correct probability.
+Polymarket's Bitcoin up/down markets are run by professional and institutional market makers with sophisticated models. Their prices are essentially the ground truth for the correct probability.
 
 Rather than modeling volatility from scratch, I work backwards:
 
