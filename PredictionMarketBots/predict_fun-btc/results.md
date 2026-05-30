@@ -80,7 +80,7 @@ better.
 
 **Up win / Down win**
 
-The PnL the bot would realize if the market resolves in each direction. When both
+The PnL that the bot would realize if the market resolves in each direction. When both
 values are positive, the position is fully hedged, the bot profits regardless of
 which way Bitcoin moves. When one side is negative, the bot is temporarily imbalanced
 and will rebalance as new maker orders fill on the weaker side.
