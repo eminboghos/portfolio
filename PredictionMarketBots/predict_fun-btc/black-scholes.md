@@ -49,17 +49,6 @@ This gives me the implied volatility that the professional market makers are pri
 
 ---
 
-## Validation
-
-I have video recordings showing side-by-side comparisons of:
-- My computed probability vs Polymarket's displayed price
-- The timestamp difference between a Bitcoin move and each platform updating
-
-The probability values are consistently within 1–2% of each other. My updates arrive measurably earlier when Bitcoin makes a sharp move.
-
-
----
-
 ## In practice
 
 After every Binance WebSocket tick:
