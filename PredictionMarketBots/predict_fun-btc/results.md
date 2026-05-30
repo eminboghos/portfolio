@@ -14,13 +14,15 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ---
 
-## Performance Overwiew
+## Performance Overview
 
-Performance statistiques over a sample of 230 rounds (19-21 May):
+Performance statistiques (26th May 2026 - present):
 
-![Overwiew](media/performance_summary_sample_overwiew.png)
+![Overwiew](media/performance_summary_overwiew.png)
 
-📊 [Full performance statistics (Excel)](./media/performance_summary_sample.xlsx)
+📊 [Full performance statistics (Excel)](./media/performance_summary.xlsx)
+
+Last updated : 30th May 2026
 
 ---
 
