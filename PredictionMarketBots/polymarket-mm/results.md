@@ -2,7 +2,7 @@
 
 ## Summary
 
-Running since November 2024. Consistently top 1% of Polymarket traders by PnL and volume. ~1,500 transactions per day on average across the bot's lifetime.
+Running since November 2025. Consistently top 1% of Polymarket traders by PnL and volume. ~1,500 transactions per day on average across the bot's lifetime.
 
 ---
 
