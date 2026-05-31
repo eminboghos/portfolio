@@ -28,9 +28,7 @@ Last updated : 30th May 2026
 
 Performance statistiques (17th May 2026 - 19th May 2026):
 
-![Overwiew](media/performance_summary_sample_overwiew.png)
-
-📊 [Full performance statistics (Excel)](./media/performance_summary_sample.xlsx)
+📊 [Sample performance statistics (Excel)](./media/performance_summary_sample.xlsx)
 
 ---
 
