@@ -33,7 +33,7 @@ Liquid markets on Polymarket have institutional and professional market makers c
 | Daily transactions | ~2,000 |
 | Total transactions to date | 200,000+ |
 | Platform percentile (PnL + volume) | Top 1% |
-| Running since | November 2024 |
+| Running since | November 2025 |
 | Infrastructure | AWS, Python |
 
 ---
