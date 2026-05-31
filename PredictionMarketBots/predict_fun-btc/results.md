@@ -26,7 +26,7 @@ Last updated : 30th May 2026
 
 ### Previous Performance Sample
 
-![Overwiew](media/performance_summary_sample_overview.png)
+![Overwiew](media/performance_summary_sample_overwiew.png)
 
 📊 [Full performance statistics (Excel)](./media/performance_summary_sample.xlsx)
 
