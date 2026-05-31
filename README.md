@@ -15,6 +15,8 @@ skills I've developed along the way.
 
 📄 Download my resume: [Resume.pdf](./Resume.pdf)
 
+---
+
 ## Projects
 
 ### Prediction Market Bots
