@@ -13,7 +13,7 @@ skills I've developed along the way.
 
 ## Resume
 
-📄 Download my resume: [Resume.pdf](./Resume.pdf)
+Download my resume: [Resume.pdf](./Resume.pdf)
 
 ---
 
