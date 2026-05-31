@@ -1,6 +1,6 @@
 # Polymarket : Mass Market Maker
 
-> Simultaneously quoting ~2,000 illiquid markets on Polymarket, placing ~2,000 transactions per day, running live on AWS since November 2024.
+> Simultaneously quoting ~2,000 illiquid markets on Polymarket, placing ~2,000 transactions per day, running live on AWS since November 2025.
 
 ---
 
