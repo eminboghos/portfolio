@@ -24,6 +24,12 @@ Performance statistiques (26th May 2026 - present):
 
 Last updated : 30th May 2026
 
+### Previous Performance Sample
+
+![Overwiew](media/performance_summary_sample_overview.png)
+
+📊 [Full performance statistics (Excel)](./media/performance_summary_sample.xlsx)
+
 ---
 
 ## Live bot demo
