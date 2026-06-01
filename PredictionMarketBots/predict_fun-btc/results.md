@@ -14,7 +14,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ---
 
-## Performance Overview
+## Performance Overview (v4)
 
 Performance statistiques (26th May 2026 - present):
 
@@ -24,7 +24,7 @@ Performance statistiques (26th May 2026 - present):
 
 Last updated : 30th May 2026
 
-### Previous Performance Sample 
+### Previous Performance Sample (v3)
 
 Performance statistiques (17th May 2026 - 19th May 2026):
 
