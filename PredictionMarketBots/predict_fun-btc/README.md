@@ -58,6 +58,14 @@ V4 focused on execution quality and pricing accuracy rather than adding new mark
 
 **Extended stats** : added profit factor, annualized sharp ratio, max drawdown, expectancy, win rate, best streaks, share imbalance. Also planning on adding Sortino, Calmar, VaR 95%.
 
+### v5 : Upgraded order and balancee management (in progress)
+
+Currently being tested since 1st June 2026 : 
+
+Dynamic order size and max imabalance tolerance depending on market volatility, time remaining and orderbook state.
+
+Test results availabale soon in [results](./results.md).
+
 ---
 
 ## Maker vs taker
