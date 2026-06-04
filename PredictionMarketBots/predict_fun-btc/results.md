@@ -18,11 +18,11 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 Performance statistiques (26th May 2026 - present):
 
-![Overwiew](media/performance_overwiew.png)
+![Overwiew](media/performance_overwiew_june_4.png)
 
-📊 [Full performance statistics (Excel)](./media/performance.xlsx)
+📊 [Full performance statistics (Excel)](./media/performance_june_4.xlsx)
 
-Last updated : 30th May 2026
+Last updated : 4th June 2026
 
 ### Previous Performance Sample (v3)
 
