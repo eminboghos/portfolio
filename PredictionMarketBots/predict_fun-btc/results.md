@@ -16,17 +16,22 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ## Performance Overview (v4)
 
-Performance statistiques (26th May 2026 - present):
+#### Performance statistiques 15min markets (26th May 2026 - 4th June 2026):
 
 ![Overwiew](media/performance_overwiew_june_4.png)
 
 📊 [Full performance statistics (Excel)](./media/performance_june_4.xlsx)
 
-Last updated : 4th June 2026
+
+#### Performance statistiques 5min markets (5th June 2026 - 7th June 2026):
+
+![Overwiew](media/performance_overwiew_5min_june_7.png)
+
+📊 [Full performance statistics (Excel)](./media/performance_5min_june_7.xlsx)
 
 ### Previous Performance Sample (v3)
 
-Performance statistiques (17th May 2026 - 19th May 2026):
+Performance statistiques 15min markets (17th May 2026 - 19th May 2026):
 
 📊 [Sample performance statistics (Excel)](./media/performance_summary_sample.xlsx)
 
