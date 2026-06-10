@@ -11,7 +11,7 @@ This repository documents two production market-making bots I built and have run
 | Bot | Platform | Markets | Daily transactions | Status | Results |
 |---|---|---|---|---|---|
 | [Polymarket MM](./polymarket-mm/) | Polymarket | ~2,000 simultaneously | ~2,000 trades/day | 🟢 Live | [Results](./polymarket-mm/results.md) |
-| [PredictFun BTC](./predict_fun-btc/) | PredictFun | 1h / 15min / 5min BTC | ~$25,000 vol/day | 🟢 Live |[Results](./predict_fun-btc/results.md) |
+| [PredictFun BTC](./predict_fun-btc/) | PredictFun | 1h / 15min / 5min BTC | ~$60,000 vol/day | 🟢 Live |[Results](./predict_fun-btc/results.md) |
  
 Both bots place me in the **top 1% of traders** on their respective platforms by PnL and volume.
  
@@ -32,7 +32,7 @@ Illiquid markets on Polymarket often have big spreads above 20 cents (20% of the
  
 ## Bot 2 : PredictFun Bitcoin market maker
  
-Market-make the "Bitcoin up or down?" markets on PredictFun across 3 timeframes (1h, 15min, 5min). I maintain a ~5c spread and update quotes in under 250ms after a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
+Market-make the "Bitcoin up or down?" markets on PredictFun across 3 timeframes (1h, 15min, 5min). I maintain a ~1c spread and update quotes in under 250ms after a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
  
 **Key milestones:**
 - v1 (12th April) : 1h markets, ~$100 volume/hour, 10 updates/s
