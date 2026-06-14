@@ -24,7 +24,7 @@ Illiquid markets on Polymarket often have big spreads above 20 cents (20% of the
 **Key challenges solved:**
 - Processing 2,000+ markets fast enough to cycle through all quotes in under 60 seconds
 - Handling Polymarket API downtime (happens multiple times per week) without bot interruption
-- Running reliably on AWS 24/7 since November 2024
+- Running reliably on AWS 24/7 since November 2025
 
 → [Full write-up](./polymarket-mm/README.md)
  
