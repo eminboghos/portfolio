@@ -58,9 +58,9 @@ V4 focused on execution quality and pricing accuracy rather than adding new mark
 
 **Extended stats** : added profit factor, annualized sharp ratio, max drawdown, expectancy, win rate, best streaks, share imbalance. Also planning on adding Sortino, Calmar, VaR 95%.
 
-### v5 : Migration to Limitless Exchange (in progress)
+### v5 : Expansion to Limitless Exchange (in progress)
 
-Integrating same strategy on Limitless Exchange.
+Extending the strategy to Limitless Exchange.
 
 ---
 
