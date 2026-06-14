@@ -6,7 +6,7 @@
  
 ## Overview
  
-This repository documents two production market-making bots I built and have run continuously since November 2024. Both bots are live and placing orders every day.
+This repository documents two production market-making bots I built and have run continuously since November 2025. Both bots are live and placing orders every day.
  
 | Bot | Platform | Markets | Daily transactions | Daily volume | Status | Results |
 |---|---|---|---|---|---|---|
