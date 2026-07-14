@@ -32,7 +32,7 @@ Illiquid markets on Polymarket often have big spreads above 20 cents (20% of the
  
 ## Bot 2 : PredictFun Bitcoin market maker
  
-Market-make the "Bitcoin up or down?" markets on PredictFun across 3 timeframes (1h, 15min, 5min). I maintain a ~1c spread and update quotes in under 250ms after a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
+Market-make the "Bitcoin up or down?" markets on PredictFun across 3 timeframes (1h, 15min, 5min). I maintain a ~1c spread and update quotes in under 150ms after a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
  
 **Key milestones:**
 - v1 (12th April) : 1h markets, ~$100 volume/hour, 10 updates/s
