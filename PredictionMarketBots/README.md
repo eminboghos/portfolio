@@ -10,7 +10,7 @@ This repository documents three production trading bots I built and have run con
 |---|---|---|---|---|---|---|---|
 | [Polymarket MM](./polymarket-mm/) | Polymarket | Resting orders | ~2,000 simultaneously | ~2,000 trades/day | ~$25,000 vol/day | 🟢 Live | [Results](./polymarket-mm/results.md) |
 | [PredictFun BTC](./predict_fun-btc/) | PredictFun | Resting orders | 1h / 15min / 5min BTC | ~6,000 trades/day | ~$50,000 vol/day | 🟢 Live | [Results](./predict_fun-btc/results.md) |
-| Polymarket Combo RFQ | Polymarket | RFQ (quote-on-request) | Multi-leg sports Combos | ~500 trades/day | ~$15,000 vol/day | 🟢 Live | Results |
+| [Polymarket Combo RFQ](./combo-mm/)| Polymarket | RFQ (quote-on-request) | Multi-leg sports Combos | ~500 trades/day | ~$15,000 vol/day | 🟢 Live | Results |
 
 All three place me in the top 1% of traders on their respective platforms by PnL and volume.
 
