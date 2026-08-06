@@ -32,8 +32,6 @@ Market-make the "Bitcoin up or down?" markets on PredictFun across three timefra
 
 Polymarket's Combo system lets traders request quotes on multi-leg parlays as a single RFQ, rather than trading against a standing order book. This bot watches the RFQ stream and prices incoming requests off live leg prices, responding within the request window and actively cancelling if a leg moves before the trade finalizes.
 
-Unlike the other two bots, there's no book to quote into: the constraint is end-to-end latency and pricing correctness per request, not universe size.
-
 Key milestones:
 - **v1** — single sport, non-live matches only
 - **v2** — expanded to multiple sports, still non-live matches only
