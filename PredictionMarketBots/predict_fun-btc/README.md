@@ -58,9 +58,16 @@ V4 focused on execution quality and pricing accuracy rather than adding new mark
 
 **Extended stats** : added profit factor, annualized sharp ratio, max drawdown, expectancy, win rate, best streaks, share imbalance. Also planning on adding Sortino, Calmar, VaR 95%.
 
-### v5 : Expansion to Limitless Exchange and Polymarket (in progress)
+### v5 : Expansion to Limitless Exchange and Polymarket (July 2026)
 
-Extending the strategy to Limitless Exchange (5min, 15min, 1h) and Polymarket (1h, 4h).
+The strategy has been immplemented on the ETH and BNB crypto markets alongside the BTC markets on Predict Fun. Server migration to ap-northeast-1 (Tokyo) for lower latency.
+
+The strategy has also been implemented on the following markets: 
+- 1h crypto up or down markets on Limitless Exchange (BTC, ETH, SOL, XRP)
+- 4h crypto up or down markets on Polymarket (BTC, ETH, SOL, XRP)
+
+See results : [PnL graphs](./results.md)
+
 
 ---
 
