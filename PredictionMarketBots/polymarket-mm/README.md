@@ -24,7 +24,7 @@ Liquid markets on Polymarket have institutional and professional market makers c
 
 ---
 
-## v1 → v2 (currently testing)
+## v1 → v2 (currently testing since mid July 2026)
  
 **v1** proved the model: a single-process bot polling the REST API on a fixed cycle, applying one quoting rule uniformly across the market universe. It ran profitably for months and is summarized below for reference.
  
