@@ -24,17 +24,17 @@ Liquid markets on Polymarket have institutional and professional market makers c
 
 ---
 
-## Key numbers
-
-| Metric | Value |
-|---|---|
-| Markets quoted simultaneously | ~2,000 |
-| Quote refresh interval | 30–60 seconds |
-| Daily transactions | ~2,000 |
-| Total transactions to date | 200,000+ |
-| Platform percentile (PnL + volume) | Top 1% |
-| Running since | November 2025 |
-| Infrastructure | AWS, Python |
+## v1 → v2 (currently testing)
+ 
+**v1** proved the model: a single-process bot polling the REST API on a fixed cycle, applying one quoting rule uniformly across the market universe. It ran profitably for months and is summarized below for reference.
+ 
+**v2** is a from-scratch architectural rebuild, not a tuned version of v1:
+ 
+- **Event-driven, not polled.** Quote decisions fire on WebSocket price ticks instead of a fixed-interval sweep, with market subscriptions sharded across multiple WebSocket connections to scale past what a single connection or REST cycle can support.
+- **Strategy split, not one rule.** Markets are routed into distinct sub-strategies (each with independent filters, position sizing, and P&L tracking), rather than one quoting rule applied uniformly.
+- **Manipulation-resistant pricing.** Quote prices are bounded relative to depth further down the book, not just top-of-book, to reduce exposure to thin-book spoofing.
+- **Self-auditing in production.** Background processes continuously check for duplicate orders and orders on markets that should no longer be traded, and force-correct them without manual intervention.
+- **State reconciliation with sanity checks.** Local order/position state is reconciled against the exchange on every cycle, and rejected if it looks like a partial or broken read, instead of being trusted blindly.
 
 ---
 
