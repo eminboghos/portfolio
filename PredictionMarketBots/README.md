@@ -10,7 +10,7 @@ This repository documents three production trading bots I built and have run con
 |---|---|---|---|---|---|---|---|
 | [Polymarket MM](./polymarket-mm/) | Polymarket | Resting orders | ~2,000 simultaneously | ~2,000 trades/day | ~$25,000 vol/day | 🟢 Live | [Results](./polymarket-mm/results.md) |
 | [PredictFun BTC](./predict_fun-btc/) | PredictFun | Resting orders | 1h / 15min / 5min BTC | ~6,000 trades/day | ~$50,000 vol/day | 🟢 Live | [Results](./predict_fun-btc/results.md) |
-| [Polymarket Combo RFQ](./combo-mm/)| Polymarket | RFQ (quote-on-request) | Multi-leg sports Combos | ~500 trades/day | ~$15,000 vol/day | 🟢 Live | Results |
+| [Polymarket Combo RFQ](./combo-mm/)| Polymarket | RFQ (quote-on-request) | Multi-leg sports Combos | ~500 trades/day | ~$15,000 vol/day | 🟢 Live | [Results](./combo-mm/results.md) |
 
 All three place me in the top 1% of traders on their respective platforms by PnL and volume.
 
@@ -38,4 +38,4 @@ Key milestones:
 - **v3** — added live matches, across multiple sports
 - **v4 (in progress)** — correlated markets: pricing same-game combos (e.g. moneyline + handicap on the same match) as joint probabilities instead of independent legs
 
-→ Full write-up
+→ [Full write-up](./combo-mm/README.md)
