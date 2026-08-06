@@ -1,34 +1,34 @@
 # Performance Optimizations : Polymarket Market Maker
 
-The core challenge is to cycle through ~2,000 markets, compare order book state, compute new quotes, and submit changes, all within 30–60 seconds, using a single Python process talking to a rate-limited REST API.
+v1's constraint was clear: cycle time scaled with the size of the market universe, because every cycle re-scanned every market over REST. v2 removes that constraint by moving to an event-driven model . But event-driven systems have their own scaling problems: connection limits, race conditions under concurrency, and the risk of reacting to noise. The optimizations below address those.
 
 ---
 
 ## Key optimizations
 
-### Batch fetching
-
-Polymarket's API supports fetching multiple markets in a single request. Rather than 2,000 individual calls, the bot groups markets into batches and fetches them in parallel. This alone cuts fetch time by an order of magnitude.
-
-### Change detection
-
-Most markets don't change between cycles. Rather than recomputing and resubmitting quotes for all 2,000 markets every cycle, the bot tracks the last-seen best bid and ask for each market and only acts on markets where something has changed.
-
-In practice, only a small fraction of markets move in any 60 second window so the effective work per cycle is much less than 2,000 markets.
-
-### Deferred cancellation
-
-Canceling an order costs an API call. If a quote has drifted slightly but is still within tolerance, the bot leaves the existing order in place rather than canceling and resubmitting. This reduces the number of API calls per cycle significantly.
-
-### Parallel order submission
-
-Order submissions are I/O-bound (waiting for the API response). The bot uses async I/O to submit multiple orders concurrently, rather than waiting for each one sequentially.
-
----
-
-## Cycle time results
-
-The bot comfortably refreshes all 2,000 markets every 30–60 seconds, with headroom to add more markets.
+### WebSocket sharding
+ 
+A single WebSocket connection can only carry so many subscriptions reliably. Rather than one connection for the full market universe, subscriptions are distributed across multiple shards, each managing its own connection and subscription set. New shards are created on demand as the subscribed universe grows, so the system scales subscription count roughly linearly rather than hitting a hard ceiling.
+ 
+### Subscribe only to what can act
+ 
+Not every market that passes the initial filter can actually result in a trade at the current book state. Rather than subscribing the full filtered universe to live price feeds, v2 pre-computes which markets currently qualify to trade (using the same rule the order-placement logic itself uses) and only subscribes that qualifying subset — then diffs and re-subscribes as qualification changes. This avoids maintaining live subscriptions for markets that couldn't act on a tick even if they moved.
+ 
+### Per-token locking, not a global cycle lock
+ 
+Each market's evaluation runs behind its own lock, not a single lock for the whole system. Ticks for different markets are processed concurrently; a tick for a market that's still being evaluated is queued for a single re-check rather than blocking, and never spawns a pile of duplicate evaluations for the same market.
+ 
+### Cooldowns on replace
+ 
+A market whose price is oscillating slightly, but still within the tolerance the strategy allows, doesn't need to cancel and repost on every tick. A per-market cooldown after a replace prevents rapid-fire cancel/repost cycles that would otherwise burn API calls and rate-limit budget without changing the economics of the quote.
+ 
+### Confirmed cancels before replacement
+ 
+Before posting a replacement order, the cancel of the old order is confirmed via the user WebSocket channel rather than assumed to have succeeded. If confirmation doesn't arrive in time, the system skips posting a replacement for that cycle rather than risking two live orders on the same side of the same market.
+ 
+### Async I/O throughout
+ 
+Both REST calls and order submissions are I/O-bound. Blocking calls are run in a thread pool and awaited alongside the async WebSocket event loop, so a slow response from one market doesn't stall evaluation of others.
 
 ---
 
