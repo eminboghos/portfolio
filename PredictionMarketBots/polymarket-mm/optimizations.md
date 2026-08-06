@@ -12,11 +12,11 @@ A single WebSocket connection can only carry so many subscriptions reliably. Rat
  
 ### Subscribe only to what can act
  
-Not every market that passes the initial filter can actually result in a trade at the current book state. Rather than subscribing the full filtered universe to live price feeds, v2 pre-computes which markets currently qualify to trade (using the same rule the order-placement logic itself uses) and only subscribes that qualifying subset — then diffs and re-subscribes as qualification changes. This avoids maintaining live subscriptions for markets that couldn't act on a tick even if they moved.
+Not every market that passes the initial filter can actually result in a trade at the current book state. Rather than subscribing the full filtered universe to live price feeds, v2 pre-computes which markets currently qualify to trade (using the same rule the order-placement logic itself uses) and only subscribes that qualifying subset, then diffs and re-subscribes as qualification changes. This avoids maintaining live subscriptions for markets that couldn't act on a tick even if they moved.
  
 ### Per-token locking, not a global cycle lock
  
-Each market's evaluation runs behind its own lock, not a single lock for the whole system. Ticks for different markets are processed concurrently; a tick for a market that's still being evaluated is queued for a single re-check rather than blocking, and never spawns a pile of duplicate evaluations for the same market.
+Each market's evaluation runs behind its own lock, not a single lock for the whole system. Ticks for different markets are processed concurrently, a tick for a market that's still being evaluated is queued for a single recheck rather than blocking, and never spawns a pile of duplicate evaluations for the same market.
  
 ### Cooldowns on replace
  
