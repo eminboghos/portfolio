@@ -2,7 +2,7 @@
 
 # Summary
 
-Running since July 2026. Currenlty top 20 market maker on Polymarket Combos
+Running since July 2026. Currently top 20 market maker on Polymarket Combos.
 
 ---
 
