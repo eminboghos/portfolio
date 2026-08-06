@@ -23,10 +23,12 @@ The core cycle runs continuously:
 
 Markets are selected at startup and periodically refreshed. Criteria are:
 
-- Spread ≥ 20 cents (after my tightening, I still need enough margin to be worth quoting)
+- Spread ≥ 10 cents (after my tightening, I still need enough margin to be worth quoting)
 - Highest bid > 25 cents (to not enter events that are very unlikely to happen)
 - Not resolving in the next 24h (too close to resolution = high adverse selection risk)
 - Sufficient volume (at least ~$500 volume/day)
+
+These criterias change overtime due to changing market conditions and increased competition.
 
 ---
 
