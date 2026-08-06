@@ -6,7 +6,7 @@
 
 ## Strategy
 
-Polymarket hosts over 50,000 prediction markets. The vast majority of these are illiquid, spreads of 20 cents or more are common, and sometimes no one has updated quotes in hours.
+Polymarket hosts over 100,000 prediction markets. The vast majority of these are illiquid, spreads of 20 cents or more are common, and sometimes no one has updated quotes in hours.
 
 My approach is simple and deliberately avoids needing to model the "correct" probability for any individual market:
 
