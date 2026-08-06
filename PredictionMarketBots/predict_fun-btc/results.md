@@ -14,6 +14,14 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ---
 
+## Performance Overview (v5)
+
+![PnL graph](media/pnl_Limitless.png)
+
+*Monthly PNL on BTC, ETH, SOL, XRP 1h markets on Limitless Exchange*
+
+---
+
 ## Performance Overview (v4)
 
 #### Performance statistiques 5min markets (5th June 2026 - 13th June 2026):
