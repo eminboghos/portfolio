@@ -8,9 +8,9 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 ## PnL over time (Predict Fun BTC)
 
 
-![PnL graph](media/predict_bot_pnl.png)
+![PnL graph](media/alltime_pnl.png)
 
-*Cumulative PnL with three milestones: launch with 1h markets, 15min markets added,  5min markets*
+*February 2026 - August 2026* 
 
 ---
 
