@@ -27,7 +27,7 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
 ["Here"](./PredictionMarketBots) you can find:
 
 - **Polymarket mass market maker** : simultaneously quoting ~2,000 illiquid markets,
-  200,000+ total transactions since November 2024
+  200,000+ total transactions since November 2025
 - **PredictFun Bitcoin bot** : sub-second market-making on Bitcoin up/down markets
   across 1h, 15min, and 5min timeframes, with quotes updating up to 50 times every second
 
