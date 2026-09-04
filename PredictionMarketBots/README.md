@@ -26,7 +26,7 @@ Key challenges solved: processing thousands of markets fast enough to keep quote
 
 Market-make the "Bitcoin up or down?" markets on PredictFun across three timeframes (1h, 15min, 5min), maintaining a tight spread and updating quotes within milliseconds of a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
 
-→ [Full write-up](./redict_fun-btc/README.md)
+→ [Full write-up](./predict_fun-btc/README.md)
 
 ## Bot 3: Polymarket Combo RFQ market maker
 
