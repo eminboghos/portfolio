@@ -30,6 +30,7 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
   200,000+ total transactions since November 2025
 - **PredictFun Bitcoin bot** : sub-second market-making on Bitcoin up/down markets
   across 1h, 15min, and 5min timeframes, with quotes updating up to 50 times every second
+  - [Live dashboard](https://predict.ebaportfolio.com/d/WxKHiviqCFfVRgWmgGTbQpFGO8JpPeQO) : live order book, order placements, and PnL for the PredictFun bot
 
 ### Wizard Game
 
