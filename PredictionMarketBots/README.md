@@ -9,7 +9,7 @@ This repository documents three production trading bots I built and have run con
 | Bot | Platform | Mechanism | Markets | Daily transactions | Daily volume | Status | Results |
 |---|---|---|---|---|---|---|---|
 | [Polymarket MM](./polymarket-mm/) | Polymarket | Resting orders | ~2,000 simultaneously | ~2,000 trades/day | ~$25,000 vol/day | 🟢 Live | [Results](./polymarket-mm/results.md) |
-| [PredictFun BTC](./predict_fun-btc/) | PredictFun | Resting orders | 1h / 15min / 5min BTC | ~1,500 trades/day | ~$50,000 vol/day | 🟢  [Live](https://predict.ebaportfolio.com/d/WxKHiviqCFfVRgWmgGTbQpFGO8JpPeQO) | [Results](./predict_fun-btc/results.md) |
+| [PredictFun BTC](./predict_fun-btc/) | PredictFun | Resting orders | 1h / 15min / 5min BTC | ~1,500 trades/day | ~$50,000 vol/day | 🟢  [Live](./predict_fun-btc/live_dashboard.md) | [Results](./predict_fun-btc/results.md) |
 | [Polymarket Combo RFQ](./combo-mm/)| Polymarket | RFQ (quote-on-request) | Multi-leg sports Combos | ~500 trades/day | ~$15,000 vol/day | 🟢 Live | [Results](./combo-mm/results.md) |
 
 All three place me in the top 1% of traders on their respective platforms by PnL and volume.
@@ -26,7 +26,7 @@ Key challenges solved: processing thousands of markets fast enough to keep quote
 
 Market-make the "Bitcoin up or down?" markets on PredictFun across three timeframes (1h, 15min, 5min), maintaining a tight spread and updating quotes within milliseconds of a Bitcoin price move. Pricing uses the Black-Scholes formula with implied volatility extracted from Polymarket's BTC markets.
 
-→ [Live dashboard](https://predict.ebaportfolio.com/d/WxKHiviqCFfVRgWmgGTbQpFGO8JpPeQO) : live order book, order placements, and PnL for the PredictFun bot
+→ [Live dashboard](./predict_fun-btc/live_dashboard.md) : live order book, order placements, and PnL for the PredictFun bot
 
 → [Full write-up](./predict_fun-btc/README.md)
 
