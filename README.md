@@ -21,6 +21,8 @@ Download my resume: [Resume.pdf](./Resume.pdf)
 
 ### Prediction Market Bots
 
+![Console screenshot](PredictionMarketBots/predict_fun-btc/media/live_dashboard_gif.gif)
+
 Two automated market-making bots running live on prediction markets, placing thousands
 of transactions per day and ranking in the top 1% of traders by PnL and volume.
 
