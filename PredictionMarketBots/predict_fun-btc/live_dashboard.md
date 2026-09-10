@@ -6,6 +6,6 @@
 
 Live dashboard : https://predict.ebaportfolio.com/d/WxKHiviqCFfVRgWmgGTbQpFGO8JpPeQO
 
-If the dashboard link is not accessible, it may be due to your organization's security or firewall settings. You can watch a video demonstration of the live dashboard here: will be availble on 10/09/2026
+If the dashboard link is not accessible, it may be due to your organization's security or firewall settings. You can watch a video demonstration of the live dashboard here: https://youtu.be/pgsnCBZdyko
 
 ---
