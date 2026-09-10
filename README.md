@@ -21,7 +21,7 @@ Download my resume: [Resume.pdf](./Resume.pdf)
 
 ### Prediction Market Bots
 
-![Console screenshot](PredictionMarketBots/predict_fun-btc/media/live_dashboard_gif.gif)
+![Live_dashboard](PredictionMarketBots/predict_fun-btc/media/live_dashboard_gif.gif)
 
 Two automated market-making bots running live on prediction markets, placing thousands
 of transactions per day and ranking in the top 1% of traders by PnL and volume.
@@ -35,6 +35,8 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
   - [Live dashboard](./PredictionMarketBots/predict_fun-btc/live_dashboard.md) : live order book, order placements, and PnL for the PredictFun bot
 
 ### Wizard Game
+
+![Gameplay](WizardGame/Media/gameplay_gif.gif)
 
 A fast-paced wizard combat game that I am building on Unreal Engine 5.
 
