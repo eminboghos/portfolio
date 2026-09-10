@@ -19,7 +19,7 @@ Download my resume: [Resume.pdf](./Resume.pdf)
 
 ## Projects
 
-### Prediction Market Bots
+### Prediction Market Bots (November 2025 - Present)
 
 ![Live_dashboard](PredictionMarketBots/predict_fun-btc/media/live_dashboard_gif.gif)
 
@@ -34,7 +34,7 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
   across 1h, 15min, and 5min timeframes, with quotes updating up to 50 times every second
   - [Live dashboard](./PredictionMarketBots/predict_fun-btc/live_dashboard.md) : live order book, order placements, and PnL for the PredictFun bot
 
-### Wizard Game
+### Wizard Game (2023-2025)
 
 ![Gameplay](WizardGame/Media/gameplay_gif.gif)
 
