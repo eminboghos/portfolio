@@ -34,7 +34,7 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
   across 1h, 15min, and 5min timeframes, with quotes updating in less than 150ms
   - [Live dashboard](./PredictionMarketBots/predict_fun-btc/live_dashboard.md) : live order book, order placements, and PnL for the PredictFun bot
 
-### Video Game Development (2024-2025)
+### Video Game Development (2021-2025)
 
 ![Gameplay](WizardGame/Media/gameplay_gif.gif)
 
