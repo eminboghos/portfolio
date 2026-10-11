@@ -5,7 +5,7 @@
 Three distinct performance phases, each clearly visible in the PnL graph. The biggest step-changes were adding 15-minute markets and 5-minute markets.
 
 ---
-## PnL over time (Predict Fun BTC)
+## PnL over time (Predict Fun Up/Down crypto)
 
 
 ![PnL graph](media/alltime_pnl.png)
