@@ -24,6 +24,7 @@ How it works:
 6. Orders are pre-signed so they can go out with minimal delay, and risk limits cap both inventory and total losses
 
 The key to accurate pricing is the volatility input: see [black-scholes.md](./black-scholes.md) for how I get it.
+
 ---
 
 ## Version history and milestones
