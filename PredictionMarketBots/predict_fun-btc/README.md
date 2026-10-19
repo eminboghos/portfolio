@@ -12,17 +12,18 @@ Polymarket's Bitcoin markets attract institutional market makers with profession
 
 ## Strategy
 
-Bitcoin up/down markets ask: will Bitcoin be higher or lower at some future time than it is right now? The correct probability for "up" changes every time Bitcoin moves.
+Up/down markets ask: will the price be higher or lower at the end of the round than at the start? The right probability for "up" changes every time the price moves, so the bot recomputes it constantly.
 
-My approach:
+How it works:
 
-1. Connect to Binance via WebSocket to get real-time Bitcoin prices
-2. Use the Black-Scholes model to compute the correct probability of "up" given the current price, time remaining, and implied volatility
-3. Place a bid and ask centered on that probability, maintaining a ~1c spread
-4. Update quotes whenever the price of Bitcoin moves
+1. Real-time prices from several exchanges (Binance, Bybit, OKX, Coinbase) over WebSocket
+2. A Black-Scholes model turns the price, the time left and the volatility into a fair probability for "up"
+3. Order book imbalance from Binance adjusts that probability, so it reacts to buying and selling pressure before the price moves
+4. The bot quotes only where it has an edge over its fair value, and cancels and replaces orders as that edge changes
+5. When the edge is big enough to cover fees and short-term price risk, it takes the trade immediately instead of using limit orders
+6. Orders are pre-signed so they can go out with minimal delay, and risk limits cap both inventory and total losses
 
-The key to accurate pricing is the volatility input : see [black-scholes.md](./black-scholes.md) for how I extract implied volatility from Polymarket's BTC markets rather than using Binance indicators.
-
+The key to accurate pricing is the volatility input: see [black-scholes.md](./black-scholes.md) for how I get it.
 ---
 
 ## Version history and milestones
@@ -68,6 +69,13 @@ The strategy has also been implemented on the following markets:
 
 See results : [PnL graphs](./results.md)
 
+### v6 : Adding Binance orderbook imbalance in the fair value calculation (October 2026)
+
+While testing, I noticed that on the 5min and 15min markets my fair value was always off from the Predict.fun mid price, and that gap kept making me lose.
+
+So I'm now feeding the Binance order book imbalance (spot and perps) into the fair value calculation. The idea is that the buy/sell pressure changes before the price does, so the fair value should catch up faster.
+
+I also watch Bybit, OKX and Coinbase prices now, since they somtimes move a moment before the Binance market does.
 
 ---
 
