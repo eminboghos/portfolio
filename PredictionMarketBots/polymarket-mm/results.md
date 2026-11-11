@@ -12,7 +12,7 @@ This page will be updated once testing for v2 is finished.
 
 ### PnL over time
 
-![PnL graph](media/polymarket_bot_pnl.png)
+![PnL graph](media/polyPoly_PNL_1year.png)
 
 *Cumulative PnL from November 2025 to present.*
 
@@ -21,7 +21,7 @@ This page will be updated once testing for v2 is finished.
 
 ### Daily transaction count
 
-![% Transaction count](media/transactions_count.png)
+![% Transaction count](media/Poly_Trades_1year.png)
 
 *Number of fills per day. The drop-off after taker fee introduction is clearly visible. The bot continues placing orders daily.*
 
