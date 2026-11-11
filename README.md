@@ -36,8 +36,6 @@ of transactions per day and ranking in the top 1% of traders by PnL and volume.
 
 ### Video Game Development (2021-2025)
 
-![Gameplay](WizardGame/Media/gameplay_gif.gif)
-
 A fast-paced wizard combat game that I am building on Unreal Engine 5.
 
 ["Here"](./WizardGame) you can find:
