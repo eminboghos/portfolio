@@ -12,7 +12,7 @@ This page will be updated once testing for v2 is finished.
 
 ### PnL over time
 
-![PnL graph](media/polyPoly_PNL_1year.png)
+![PnL graph](media/Poly_PNL_1year.png)
 
 *Cumulative PnL from November 2025 to present.*
 
