@@ -16,8 +16,6 @@ This page will be updated once testing for v2 is finished.
 
 *Cumulative PnL from November 2025 to present.*
 
-- **① Manual phase** : I was applying the strategy by hand, placing orders individually to validate the approach before building the bot.
-- **② Automated phase** : the bot takes over, quoting ~2,000 markets simultaneously. The slope increases immediately and stays consistent until taker fees are introduced (labeled on the chart), after which daily volume drops and PNL stagnates.
 
 ### Daily transaction count
 
