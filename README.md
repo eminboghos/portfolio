@@ -1,13 +1,16 @@
 # Portfolio
 
-Hello, I'm Emin.
+I’m a Financial Engineering student at ESILV, focused on algorithmic trading and market-making.
 
-I'm an engineering student with a strong passion for programming, finance and innovative
-projects. I enjoy tackling challenging problems, learning new technologies, and creating
-projects that are both technically complex and engaging.
+I like building my own projects in finance, and my main one is market-making. Since November 2025, I’ve designed and operated automated market-making systems in Python and C++, running 24/7 on AWS. They have executed over 900,000 trades for more than $16M in volume, and have been profitable every month for the past twelve months. Most of my work now goes into analysing where the strategies lose money and improving the pricing and risk management behind them.
 
-This portfolio showcases some of the projects that I am currently working on and the
-skills I've developed along the way.
+Alongside this, I enjoy taking part in trading competitions and hackathons:
+• Susquehanna Predictions Cup 2026: top 20% of ~2,000 participants
+• HackMeridian 2026 hackathon (Lisbon): 4th out of 165 teams
+
+I’m currently looking for a trading or market-making internship starting April for 4-6 months.
+
+Email: boghosazizianemin@gmail.com
 
 ---
 
