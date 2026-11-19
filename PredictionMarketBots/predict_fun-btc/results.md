@@ -10,7 +10,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 
 ![PnL graph](media/Predict_Pnl_Novemeber.png)
 
-*February 2026 - August 2026* 
+*February 2026 - November 2026* 
 
 ---
 
