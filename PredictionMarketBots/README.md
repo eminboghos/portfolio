@@ -1,6 +1,6 @@
 # Prediction Market Bots
 
-Automated market-making on Polymarket and PredictFun, built entirely in Python on AWS.
+Automated market-making on Polymarket and PredictFun, built entirely in Python and Rust on AWS.
 
 ![PnL graph](predict_fun-btc/media/overall_info_19nov.png)
 
