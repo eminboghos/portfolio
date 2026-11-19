@@ -8,7 +8,7 @@ Three distinct performance phases, each clearly visible in the PnL graph. The bi
 ## PnL over time (Predict Fun Up/Down crypto)
 
 
-![PnL graph](media/alltime_pnl.png)
+![PnL graph](media/Predict_Pnl_Novemeber.png)
 
 *February 2026 - August 2026* 
 
