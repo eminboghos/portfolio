@@ -2,6 +2,8 @@
 
 Automated market-making on Polymarket and PredictFun, built entirely in Python on AWS.
 
+![PnL graph](predict_fun-btc/media/overall_info_19nov.png)
+
 ## Overview
 
 This repository documents three production trading bots I built and have run continuously since November 2025. All three are live and trading every day.
