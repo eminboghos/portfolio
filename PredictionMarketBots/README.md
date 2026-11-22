@@ -4,7 +4,7 @@ Automated market-making on Polymarket and PredictFun, built entirely in Python a
 
 ![PnL graph](predict_fun-btc/media/overall_info_19nov.png)
 
-All results are on dashboard -> [Here](./predict_fun-btc/live_dashboard.md)
+All results are on the dashboard -> [Here](./predict_fun-btc/live_dashboard.md)
 
 ## Overview
 
