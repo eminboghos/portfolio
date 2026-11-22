@@ -2,7 +2,7 @@
 
 I’m a Financial Engineering student at ESILV, focused on algorithmic trading and market-making.
 
-I like building my own projects in finance, and my main one is market-making. Since November 2025, I’ve designed and operated automated market-making systems in Python and C++, running 24/7 on AWS. They have executed over 900,000 trades for more than $16M in volume, and have been profitable every month for the past twelve months. Most of my work now goes into analysing where the strategies lose money and improving the pricing and risk management behind them.
+I like building my own projects in finance, and my main one is market-making. Since November 2025, I’ve designed and operated automated market-making systems in Python and Rust, running 24/7 on AWS. They have executed over 900,000 trades for more than $16M in volume, and have been profitable every month for the past twelve months. Most of my work now goes into analysing where the strategies lose money and improving the pricing and risk management behind them.
 
 Alongside this, I enjoy taking part in trading competitions and hackathons:
 
